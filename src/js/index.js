@@ -16,9 +16,19 @@ window.onload = function() {
     "tomaba unas cañitas"
   ];
   let what = ["en casa", "en la playa", "en el bar"];
-  let when = ["a la hora de clase", "en la ITV", "mientras paseaba al gato"];
+  let when = [
+    "a la hora de clase",
+    "pasando la ITV",
+    "mientras paseaba al gato"
+  ];
 
-  return console.log(createExcuse(who, action, what, when));
+  this.document.getElementById("prueba").innerHTML = createExcuse(
+    who,
+    action,
+    what,
+    when
+  );
+  return createExcuse(who, action, what, when);
 };
 
 function createExcuse(...a) {
