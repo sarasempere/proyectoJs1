@@ -33,8 +33,8 @@ window.onload = function() {
 
 function createExcuse(...a) {
   let excuse = "";
-  for (let i = 0; i < a.length; i++) {
-    let arr = a[i];
+  for (let i = 0; i < arguments.length; i++) {
+    let arr = arguments[i];
     let palabra = randomText(arr);
     excuse = excuse + " " + palabra;
   }
