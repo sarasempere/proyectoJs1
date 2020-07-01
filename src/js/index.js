@@ -36,7 +36,7 @@ function createExcuse(...a) {
   for (let i = 0; i < arguments.length; i++) {
     let arr = arguments[i];
     let palabra = randomText(arr);
-    excuse = excuse + " " + palabra;
+    excuse = excuse.concat(palabra);
   }
   return excuse;
 }
